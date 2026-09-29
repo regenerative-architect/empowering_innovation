@@ -1,0 +1,15 @@
+{
+  "snapshot_date": "2026-09-28",
+  "sources": [
+    {"id":"TRYSTERO-README","title":"Trystero README and API","publisher":"dmotz / GitHub","url":"https://github.com/dmotz/trystero","notes":"Rooms, discovery strategies, password-based SDP encryption, action API, TURN configuration."},
+    {"id":"TRYSTERO-0250","title":"Trystero 0.25.0 release notes","publisher":"dmotz / GitHub","url":"https://github.com/dmotz/trystero/releases/tag/0.25.0","notes":"Object-based makeAction API, request/response actions, passive rooms, onJoinError TURN diagnostics."},
+    {"id":"TRYSTERO-0253","title":"Trystero 0.25.3 release notes","publisher":"dmotz / GitHub","url":"https://github.com/dmotz/trystero/releases/tag/0.25.3","notes":"Pinned runtime requested for this bundle."},
+    {"id":"WEBLLM","title":"WebLLM documentation","publisher":"MLC AI","url":"https://webllm.mlc.ai/docs/","notes":"WebGPU browser inference and worker support."},
+    {"id":"WEBLLM-WORKERS","title":"WebLLM advanced worker usage","publisher":"MLC AI","url":"https://webllm.mlc.ai/docs/user/advanced_usage.html","notes":"Dedicated worker architecture and browser model caching."},
+    {"id":"TX-BEAD","title":"Texas BEAD Program","publisher":"Texas Comptroller Broadband Development Office","url":"https://comptroller.texas.gov/programs/broadband/funding/bead/","notes":"Final proposal status, award counts, locations, anchor institutions and implementation status."},
+    {"id":"TX-MAPS","title":"Texas Broadband Development Maps","publisher":"Texas Comptroller Broadband Development Office","url":"https://comptroller.texas.gov/programs/broadband/outreach/maps/","notes":"Award coverage map and relationship to FCC National Broadband Map."},
+    {"id":"FCC-MAP","title":"How to Use the FCC National Broadband Map","publisher":"Federal Communications Commission","url":"https://help.bdc.fcc.gov/hc/en-us/articles/10467446103579-How-to-Use-the-FCC-s-National-Broadband-Map","notes":"Availability, location, mobile and provider views and public challenges."},
+    {"id":"FCC-FABRIC","title":"Fabric Challenge Process","publisher":"Federal Communications Commission","url":"https://help.bdc.fcc.gov/hc/en-us/articles/8554187214107-Fabric-Challenge-Process","notes":"Individual and bulk Broadband Serviceable Location Fabric challenge process."},
+    {"id":"FCC-AVAIL","title":"How to Submit an Availability Challenge","publisher":"Federal Communications Commission","url":"https://help.bdc.fcc.gov/hc/en-us/articles/10476040597787-How-to-Submit-an-Availability-Challenge","notes":"Evidence and adjudication pathway for fixed availability challenges."}
+  ]
+}

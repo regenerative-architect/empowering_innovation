@@ -1,0 +1,107 @@
+{
+  "schema": "empowerment-build-manifest/1",
+  "version": "3.0.0",
+  "built": "2026-09-28",
+  "trystero_pin": "0.25.3",
+  "trystero_newer_version_observed": "0.25.4",
+  "webllm_docs_baseline": "0.2.85",
+  "notes": [
+    "GitHub Pages-ready static bundle",
+    "Public commons defaults to Nostr discovery",
+    "Focused rooms support Nostr/MQTT/BitTorrent/IPFS",
+    "TURN is optional explicit fallback",
+    "Browser runtime testing across real NAT/firewall pairs remains environment-dependent"
+  ],
+  "files": [
+    {
+      "path": "ATTRIBUTIONS.md",
+      "bytes": 1059,
+      "sha256": "b14a944aee125dd701cbabc5d413eb8704268ca6f13e9420caf9356d02a60fc7"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1256,
+      "sha256": "3819c9cbe0bf2569a627f2106d482344987ef0c35b22ab7e04c7e7d7a7230df0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3030,
+      "sha256": "37dae8a7dc1823ab5cb549d7bda84f70634ec651f503eb095c3038a2aa623f35"
+    },
+    {
+      "path": "css/advanced.css",
+      "bytes": 6833,
+      "sha256": "3527ffbbeb64c5d70227b6a2e29356ff6b9a95fcf69a11ac6e86a640ac463665"
+    },
+    {
+      "path": "data/domain-briefs.json",
+      "bytes": 4604,
+      "sha256": "e804e5294b7f4e226033570b48391c693171e388358129251f1bc5a491d18e99"
+    },
+    {
+      "path": "data/sources.json",
+      "bytes": 2622,
+      "sha256": "e627adb1bf1f21d2bfc117f55b9cd68adf08322cc302588be19edb31f0e4921d"
+    },
+    {
+      "path": "icons/icon-192.svg",
+      "bytes": 410,
+      "sha256": "2a67860501d90e67f54c1d39b7b40f537bcbc570985293474d24a109c37cb969"
+    },
+    {
+      "path": "icons/icon-512.svg",
+      "bytes": 410,
+      "sha256": "2a67860501d90e67f54c1d39b7b40f537bcbc570985293474d24a109c37cb969"
+    },
+    {
+      "path": "index.html",
+      "bytes": 210665,
+      "sha256": "a33eda1a39d09df029f6bb9c849a8ded1f16ee28243f04dc7f8a2daba59b0d35"
+    },
+    {
+      "path": "js/enhancements.js",
+      "bytes": 6280,
+      "sha256": "9c94dbf9c9b4b041b4e8a472001297e31407fd4ad1232e66b5f56cee5fe4e35b"
+    },
+    {
+      "path": "js/multiplayer.js",
+      "bytes": 20653,
+      "sha256": "80990d1c56544b592d466fa67dec1b2d51d9f62e0b53d98489db7d226d99bdff"
+    },
+    {
+      "path": "js/webllm-worker.js",
+      "bytes": 187,
+      "sha256": "88b37a94bde5a4ed90e98a3a06bf73fce701112aca334a2ed175ee5df6123a14"
+    },
+    {
+      "path": "js/webllm.js",
+      "bytes": 5905,
+      "sha256": "da56e76971e2535291d93e313eb0147dda618596c2a84eee81ebf311b0dc148f"
+    },
+    {
+      "path": "legacy/ws-relay/README.md",
+      "bytes": 705,
+      "sha256": "adee339a3e2c38ccd0c37e8e3cf3ec16e6961b5e28fbb53e9e0d1c35d0d759fc"
+    },
+    {
+      "path": "legacy/ws-relay/package.json",
+      "bytes": 183,
+      "sha256": "6735fd1d82bc650adaeca1a2fb0a12599327e3ffc37f589772b89b40ceff513f"
+    },
+    {
+      "path": "legacy/ws-relay/server.mjs",
+      "bytes": 346,
+      "sha256": "638ae6f18b8b98cd0fc6a5a673923e2d00e6411f08cf493fe99aebec82e30c41"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 564,
+      "sha256": "e525498303bbcbced0a826e6137dd232508a02a22e7e019d813b00957177db5c"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 1787,
+      "sha256": "bdc1252385a1b5a410ccc6334b29b837e95e3262a77f76356cadcb2425c139e3"
+    }
+  ]
+}
