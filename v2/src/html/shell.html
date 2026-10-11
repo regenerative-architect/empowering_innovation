@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="{{CSP}}">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#091714">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Empowerment Recursive Innovation OS v4: a local-first, offline-capable workspace that helps policy makers, decision makers, teachers and students turn evidence into safe, accountable action. No account, no tracking, no external fonts.">
+<meta name="generator" content="Empowerment OS build {{VERSION}}">
+<meta property="og:title" content="Empowerment Recursive Innovation OS v4">
+<meta property="og:description" content="Local-first evidence, decision and classroom tools with a Zero-Harm and Anti-Inversion design.">
+<meta property="og:type" content="website">
+<title>Empowerment Recursive Innovation OS · v4</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23112820'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%239be8b2'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%236ecbc7' stroke-width='3'/%3E%3Ccircle cx='52' cy='32' r='4' fill='%236ecbc7'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Empowerment Recursive Innovation OS","applicationCategory":"EducationalApplication","operatingSystem":"Any (modern web browser)","softwareVersion":"{{VERSION}}","isAccessibleForFree":true,"license":"https://opensource.org/licenses/MIT","description":"Local-first evidence, decision and classroom workspace. Data stays in the browser unless the person exports it.","inLanguage":["en","es","fr"]}</script>
+<style>
+{{CSS}}
+</style>
+<script>
+{{BOOT_JS}}
+</script>
+</head>
+<body>
+<!--
+  ZERO-HARM & ANTI-INVERSION NOTE
+  Zero-Harm: this workspace is designed to help people and must not be used to harm them.
+  Anti-Inversion: every helpful feature (matching, scoring, sharing, measuring, nudging) can be flipped into its
+  opposite (surveillance, coercion, exclusion, extraction). Before relying on any output, ask how it could be
+  inverted, who could be hurt, and who was not in the room. Nothing here profiles, ranks or monitors people;
+  nothing leaves the device unless the person exports or explicitly connects; analytics are off by default,
+  local-only and erasable. When uncertain: choose safety, clarity, transparency and offline reliability.
+-->
+<a class="skip" href="#main" data-i18n="ui.skip">Skip to main content</a>
+<div id="epLive" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+<div id="readProgress" class="read-progress" aria-hidden="true"><span></span></div>
+{{SPLASH}}
+<header class="topbar" id="top">
+  <a class="brand" href="#home" aria-label="Empowerment OS" data-i18n-attr="aria-label:brand.aria"><span class="brand-mark" aria-hidden="true">✳</span><span class="brand-text"><b>EMPOWERMENT OS</b><small data-i18n="brand.sub">Recursive Innovation · v4</small></span></a>
+  <nav class="groups" id="groupNav" aria-label="Main groups" data-i18n-attr="aria-label:nav.groups"></nav>
+  <div class="top-actions">
+    <search class="search-wrap" role="search"><button id="searchBtn" class="search-btn" type="button" aria-keyshortcuts="Control+K Meta+K" aria-haspopup="dialog"><span aria-hidden="true">⌕</span> <span data-i18n="ui.search">Search</span> <kbd aria-hidden="true">Ctrl K</kbd></button></search>
+    <label class="sr-only" for="roleSelect" data-i18n="role.label">Your lens</label>
+    <select id="roleSelect" class="top-select">
+      <option value="" data-i18n="role.none">Lens: everyone</option>
+      <option value="policy" data-i18n="role.policy">Policy maker</option>
+      <option value="corporate" data-i18n="role.corporate">Corporate decision maker</option>
+      <option value="educator" data-i18n="role.educator">Teacher / educator</option>
+      <option value="student" data-i18n="role.student">Student</option>
+      <option value="community" data-i18n="role.community">Community organiser</option>
+    </select>
+    <label class="sr-only" for="langSelect" data-i18n="ui.language">Language</label>
+    <select id="langSelect" class="top-select narrow">
+      <option value="auto" data-i18n="lang.auto">Auto</option>
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+    </select>
+    <button id="themeBtn" type="button" aria-label="Toggle color theme" data-i18n-attr="aria-label:ui.theme;title:ui.theme"><span aria-hidden="true">◐</span><span class="btn-label" data-i18n="ui.themeShort">Theme</span></button>
+    <button id="settingsBtn" type="button" aria-haspopup="dialog" data-i18n-attr="title:ui.settings"><span aria-hidden="true">⚙</span><span class="btn-label" data-i18n="ui.settings">Settings</span></button>
+    <button id="printBtn" type="button" data-i18n-attr="title:ui.print"><span aria-hidden="true">⎙</span><span class="btn-label" data-i18n="ui.print">Print</span></button>
+    <button id="tocBtn" class="only-narrow" type="button" aria-haspopup="dialog" data-i18n-attr="title:ui.contents"><span aria-hidden="true">☰</span><span class="btn-label" data-i18n="ui.contents">Contents</span></button>
+  </div>
+</header>
+<div id="syncBanner" class="sync-banner" role="status" hidden>
+  <span data-i18n="sync.changed">This workspace was changed in another tab.</span>
+  <button id="syncReload" type="button" class="primary" data-i18n="sync.update">Update this tab</button>
+  <button id="syncDismiss" type="button" data-i18n="ui.dismiss">Dismiss</button>
+</div>
+<div class="shell layout">
+  <aside id="toc" class="toc no-print" aria-label="Contents" data-i18n-attr="aria-label:ui.contents"></aside>
+  <main id="main" tabindex="-1">
+{{SECTIONS}}
+  </main>
+</div>
+<footer class="footer shell" id="footer">
+  <div class="footer-zh" role="note">
+    <strong data-i18n="footer.zhTitle">Zero-Harm &amp; Anti-Inversion</strong>
+    <p data-i18n="footer.zh">This workspace is built to help, not to control. It does not profile, rank or monitor people; nothing leaves your device unless you export it or choose to connect; analytics are off by default and local-only. Before relying on any output, ask how it could be flipped into surveillance, coercion, exclusion or extraction, and who was not in the room. If a use could harm someone, stop and ask the people affected.</p>
+  </div>
+  <p class="footer-line"><span>✳ Empowerment Recursive Innovation OS · v{{VERSION}} · <span data-i18n="footer.built">built</span> {{BUILD_DATE}}</span> · <a href="#attributions" data-i18n="footer.attr">Attributions &amp; licensing</a> · <a href="#data" data-i18n="footer.privacy">Data &amp; privacy</a> · <a href="#system" data-i18n="footer.system">System check</a> · <a href="#home" data-i18n="footer.top">Return to top ↑</a></p>
+</footer>
+<div id="printSheet" class="print-sheet" aria-hidden="true"></div>
+<noscript>
+  <div class="shell panel" style="margin:2rem auto">
+    <h2>JavaScript is disabled: the reference and operating principles remain available</h2>
+    <p>The interactive tools, search, persistence, modelling and import/export in this file need JavaScript. Core guidance that works without it: choose a real need; review original research; obtain consent and any required permissions; define a baseline and a falsifiable outcome; pilot safely; record failures as well as successes; never claim causation from a before/after difference; ask how a helpful feature could be inverted into harm (surveillance, coercion, exclusion, extraction) before using it. Starting sources: <a href="https://www.fao.org/cfs/policy-products/voluntary-guidelines-and-policy-recommendations/strengthening-urban-and-peri-urban-food-systems" rel="noopener noreferrer">FAO food systems (2025)</a>, <a href="https://www.ilo.org/publications/flagship-reports/lifelong-learning-and-skills-future" rel="noopener noreferrer">ILO lifelong learning (2026)</a>, <a href="https://www.ser.org/page/SERStandards" rel="noopener noreferrer">SER restoration standards</a>, <a href="https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/water-safety-and-quality/household-water-treatment-and-safe-storage" rel="noopener noreferrer">WHO household water treatment</a>, <a href="https://www.nist.gov/itl/ai-risk-management-framework" rel="noopener noreferrer">NIST AI RMF</a>. To read everything offline, open this file once in a browser with JavaScript enabled and use Print.</p>
+    <p><strong>Zero-Harm &amp; Anti-Inversion:</strong> this workspace is built to help, not to control. Nothing leaves your device unless you export it. If a use could harm someone, stop and ask the people affected.</p>
+  </div>
+</noscript>
+<div id="toast" role="status" aria-live="polite"></div>
+<script>
+{{SPLASH_JS}}
+</script>
+<script>
+{{MAIN_JS}}
+</script>
+</body>
+</html>
